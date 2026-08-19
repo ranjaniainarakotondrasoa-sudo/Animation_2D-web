@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les visuels</title>
+    <link rel="stylesheet" href="visu.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Les visuels</h1>
+        <a href="index.html"><img src="img/Retour.png" alt="Menu" width="25px">Retour au menu</a>
+
+    </header>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <video controls poster="img/Titre1.jpeg">
+                    <source src="Projets_Arnaud_2026/ANIMATION_2D_VIDEO.mkv" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+            </div>
+            <div class="swiper-slide">
+                <video controls poster="img/Titre2.jpeg">
+                    <source src="../../Videos/Les Principes du UI Design(360P).mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        </div>
+
+        <script src="swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                direction: 'horizontal',
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+        <!--<video width="100%" controls>
+            <source src="../Projets_Arnaud_2026/ANIMATION_2D_VIDEO.mkv" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>-->
+    </div>
+</body>
+
+</html>
